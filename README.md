@@ -64,3 +64,26 @@ query the graph
 
 ## Local Node
 
+`git clone https://github.com/graphprotocol/graph-node/`
+
+`cd graph-node/docker`
+
+edit `docker-compose.yaml` to correct RPC
+
+```yaml
+ethereum: 'mainnet:http://172.18.0.1:8545'
+to
+ethereum: 'mainnet:https://stardust.metis.io/?owner=588'
+```
+
+`./setup.sh`
+
+`docker-compose up`
+
+compile subgraph
+
+`npx graph-compiler --config configs/config.json --include node_modules/@openzeppelin/subgraphs/src/datasources --export-schema --export-subgraph`
+
+deploy locally
+
+`graph deploy --ipfs http://localhost:5001 --node http://localhost:8020 generated/erc1155-test ./generated/erc1155-test.subgraph.yaml`

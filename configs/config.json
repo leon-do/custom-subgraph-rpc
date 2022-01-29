@@ -1,5 +1,5 @@
 {
-  "output": "generated/oz-erc1155-template0.",
-  "chain": "rinkeby",
-  "datasources": [{ "address": "0xF37eE89bb34Cf993457bf52d7598d4085e0721eD", "startBlock": 10072962, "module": ["erc1155", "ownable", "accesscontrol"] }]
+  "output": "generated/erc1155-test.",
+  "chain": "mainnet",
+  "datasources": [{ "address": "0x9F57F2915Fa6418bb519C463FFfa1599DB061Ca3", "startBlock": 688506, "module": ["erc1155", "ownable", "accesscontrol"] }]
 }
