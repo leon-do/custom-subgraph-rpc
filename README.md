@@ -84,6 +84,29 @@ compile subgraph
 
 `npx graph-compiler --config configs/config.json --include node_modules/@openzeppelin/subgraphs/src/datasources --export-schema --export-subgraph`
 
+create
+
+`graph create generated/erc1155-test --node http://127.0.0.1:8020`
+
 deploy locally
 
 `graph deploy --ipfs http://localhost:5001 --node http://localhost:8020 generated/erc1155-test ./generated/erc1155-test.subgraph.yaml`
+
+visit
+
+http://localhost:8000/subgraphs/name/generated/erc1155-test/graphql
+
+query
+
+```
+{
+  account(id: "0xdd4c825203f97984e7867f11eecc813a036089d1") {
+    ERC1155balances {
+      valueExact
+      token {
+        identifier
+      }
+    }
+  }
+}
+```
