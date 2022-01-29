@@ -1,5 +1,5 @@
 {
-  "output": "generated/token.",
+  "output": "generated/oz-erc1155-template0.",
   "chain": "rinkeby",
-  "datasources": [{ "address": "0xA3B26327482312f70E077aAba62336f7643e41E1", "startBlock": 9917639, "module": ["erc20"] }]
+  "datasources": [{ "address": "0xF37eE89bb34Cf993457bf52d7598d4085e0721eD", "startBlock": 10072962, "module": ["erc1155", "ownable", "accesscontrol"] }]
 }
