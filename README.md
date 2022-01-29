@@ -16,7 +16,7 @@ edit `configs/config.json`
 
 ```json
 {
-  "output": "generated/oz-erc1155-template0.",
+  "output": "generated/sample.",
   "chain": "rinkeby",
   "datasources": [{ "address": "0xF37eE89bb34Cf993457bf52d7598d4085e0721eD", "startBlock": 10072962, "module": ["erc1155", "ownable", "accesscontrol"] }]
 }
@@ -43,7 +43,7 @@ Name should match `config.json`
 
 ![](https://user-images.githubusercontent.com/59702430/151643848-b0a5c254-0c6f-4d1e-9174-49cb12bbd074.png)
 
-`graph deploy --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ ln-state/oz-erc1155-template0 ./generated/oz-erc1155-template0.subgraph.yaml`
+`graph deploy --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ ln-state/sample ./generated/sample.subgraph.yaml`
 
 query the graph
 
@@ -86,15 +86,15 @@ compile subgraph
 
 create
 
-`graph create generated/erc1155-test --node http://127.0.0.1:8020`
+`graph create generated/sample --node http://127.0.0.1:8020`
 
 deploy locally
 
-`graph deploy --ipfs http://localhost:5001 --node http://localhost:8020 generated/erc1155-test ./generated/erc1155-test.subgraph.yaml`
+`graph deploy --ipfs http://localhost:5001 --node http://localhost:8020 generated/erc1155-test ./generated/sample.subgraph.yaml`
 
 visit
 
-http://localhost:8000/subgraphs/name/generated/erc1155-test/graphql
+http://localhost:8000/subgraphs/name/generated/sample/graphql
 
 query
 
