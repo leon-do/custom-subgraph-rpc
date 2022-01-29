@@ -1,5 +1,8 @@
 {
-  "output": "generated/erc1155-test.",
+  "output": "generated/sample.",
   "chain": "mainnet",
-  "datasources": [{ "address": "0x9F57F2915Fa6418bb519C463FFfa1599DB061Ca3", "startBlock": 688506, "module": ["erc1155", "ownable", "accesscontrol"] }]
+  "datasources": [
+    { "address": "0x9F57F2915Fa6418bb519C463FFfa1599DB061Ca3", "startBlock": 688506, "module": ["erc1155", "ownable", "accesscontrol"] },
+    { "address": "0x9F57F2915Fa6418bb519C463FFfa1599DB061Ca3", "startBlock": 688506, "module": ["erc20", "ownable", "accesscontrol"] }
+  ]
 }
